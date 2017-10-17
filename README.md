@@ -45,6 +45,9 @@ Also the script presents global object `AttendifyEventWall` with the following p
 ## Requirements:
 * CrossBrowser style. (IE11+ and other modern browsers)
 * The flow of messages should follow from top to bottom, split into columns which follow from left to right.
+  * New items are appended to stack in columns. 
+  * If item doesn't fit into height of container, it should be moved in the next column.
+  * Container should have fixed height, not bigger than viewport height. Width may vary.
 * **Mandatory**. The styles should be designed with using of preprocessors.
 * **Mandatory**. The project should contain package.json. To launch the project you should use the following commands:
   * `npm install`  -- install required dependencies
