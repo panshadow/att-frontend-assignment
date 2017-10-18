@@ -41,8 +41,6 @@ Also the script presents global object `AttendifyEventWall` with the following p
   * **mobile**: `width <= 480 px`: 1 column, width 100%
   * **tablet**: `width <= 768 px`: 2 columns, width 100% (the whole width of column)
   * **desktop**: `width > 768 px`: 3 columns, fixed width 360px.You should centre the container
-* (*Optional*) Send your solution as Pull Request.
-  
 
 ## Requirements:
 * CrossBrowser style. (IE11+ and other modern browsers)
