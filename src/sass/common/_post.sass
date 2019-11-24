@@ -1,0 +1,49 @@
+.post
+  width: calc(100% - 20px)
+  padding: 24px
+  display: flex
+  flex-direction: column
+  box-shadow: 0 5px 12px rgba(3, 3, 3, 0.2)
+  background-color: rgba(255,255, 255, .7)
+  border-radius: 15px
+  margin: 12px
+  @media #{$xs-min}
+    width: calc(50% - 24px)
+  @media #{$sm-min}
+    width: 360px
+  header
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: flex-start
+    margin-bottom: 24px
+    div
+      display: flex
+      flex-direction: column
+      margin: 0 16px
+      width: 100%
+      padding-right: 30px
+
+.photo
+  display: flex
+  width: 50px
+  height: 50px
+  object-fit: cover
+  object-position: center
+  border-radius: 50%
+
+.position
+  color: #9499a5
+  font-size: 12px
+  line-height: 15px
+
+.author
+  margin-bottom: 5px
+
+.time
+  color: #9499a5
+.text
+  line-height: 1.3
+  .banned &
+    font-style: italic
+    color: #999

@@ -1,0 +1,130 @@
+.button-box
+  display: flex
+  justify-content: center
+  align-items: center
+
+.btn
+  width: 100%
+  max-width: $btn-width
+  height: $btn-height
+  border: none
+  border-radius: 10px
+  text-align: center
+  color: #FFFFFF
+  font-size: 30px
+  font-weight: 700
+  letter-spacing: 2px
+  transition: all .2s linear
+  box-shadow: 0 5px 12px rgba(3, 3, 3, 0.2)
+  &[data-size="s"]
+    max-width: $btn-width * $scale-s
+    height: $btn-height * $scale-s
+  &[data-size="m"]
+    max-width: $btn-width * $scale-m
+    height: $btn-height * $scale-m
+  &[data-size="l"]
+    max-width: $btn-width * $scale-l
+    height: $btn-height * $scale-l
+  &[data-color="default"]
+    background-color: $color-default
+  &[data-color="success"]
+    background-color: $color-success
+  &[data-color="warning"]
+    background-color: $color-warning
+  &[data-color="error"]
+    background-color: $color-error
+  &[data-color="danger"]
+    background-color: $color-danger
+  &[disabled="disabled"]
+    background-color: #cccccc
+  &[data-event="loading"]
+    position: relative
+    padding-right: 20px
+    &:after
+      content: ""
+      position: absolute
+      right: 20px
+      top: calc(50% - 15px)
+      display: block
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      border: 2px solid
+      border-color: rgba(255, 255, 255, .8) transparent rgba(255, 255, 255, .8) transparent
+      animation: load 2s linear infinite
+      z-index: 99
+  &[data-anchor="anchor"]
+    width: 50px
+    height: 50px
+    background-color: $color-anchor
+    position: relative
+    text-indent: -1000px
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      width: 9px
+      height: 5px
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%) rotate(-180deg)
+      background-image: url("/img/anchor-arrow.svg")
+  &_color
+    &-default
+      background-color: $color-default
+    &-success
+      background-color: $color-success
+    &-warning
+      background-color: $color-warning
+    &-error
+      background-color: $color-error
+    &-danger
+      background-color: $color-danger
+  &_size
+    &-s[data-size="s"]
+      max-width: $btn-width * $scale-s
+      height: $btn-height * $scale-s
+    &-m
+      max-width: $btn-width * $scale-m
+      height: $btn-height * $scale-m
+    &-l
+      max-width: $btn-width * $scale-l
+      height: $btn-height * $scale-l
+  &:hover
+    opacity: .8
+    box-shadow: 0 5px 12px rgba(3, 3, 3, 0.4)
+  &:active
+    opacity: 1
+    box-shadow: none
+  &_loading
+    position: relative
+    padding-right: 20px
+    &:after
+      content: ""
+      position: absolute
+      right: 20px
+      top: calc(50% - 15px)
+      display: block
+      width: 30px
+      height: 30px
+      border-radius: 50%
+      border: 2px solid
+      border-color: rgba(255, 255, 255, .8) transparent rgba(255, 255, 255, .8) transparent
+      animation: load 2s linear infinite
+      z-index: 99
+  &_anchor
+    width: 50px
+    height: 50px
+    background-color: $color-anchor
+    position: relative
+    text-indent: -1000px
+    overflow: hidden
+    &:after
+      content: ''
+      position: absolute
+      width: 9px
+      height: 5px
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%) rotate(-180deg)
+      background-image: url("/img/anchor-arrow.svg")

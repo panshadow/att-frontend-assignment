@@ -1,0 +1,15 @@
+.button-section
+  padding-top: 50px
+  padding-bottom: 50px
+  &__container
+    display: flex
+    flex-direction: column
+    margin: 0 auto
+    @media #{$smx-min}
+      flex-direction: row
+      & > div
+        flex: 0 0 50%
+    & > div:first-child
+      margin-bottom: 50px
+      @media #{$smx-min}
+        margin-bottom: 0

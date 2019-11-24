@@ -1,0 +1,27 @@
+.style-box
+  display: flex
+  flex-direction: column
+  justify-content: left
+.style-type
+  flex-direction: column
+  &:nth-child(n):not(:last-child)
+    margin-bottom: 25px
+  &__title
+    font-size: 24px
+    font-weight: 700
+    margin-bottom: 35px
+  &__select-box
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  &__select-item
+    border: 1px solid #1E2124
+    border-radius: 20px
+    color: #1E2124
+    padding: 7px 20px
+    margin-right: 10px
+    margin-bottom: 5px
+    cursor: pointer
+    &.active
+      border-color: #2AB41D
+      color: #2AB41D
