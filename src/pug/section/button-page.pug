@@ -1,0 +1,31 @@
+section.button-section
+    .container.button-section__container
+        .button-box
+            button(type="button" data-color='default')#btn.btn push
+        .style-box
+            .style-type
+                .style-type__title Size
+                .style-type__select-box.style-type_size
+                    .style-type__select-item(data-size="s") s
+                    .style-type__select-item(data-size="m") m
+                    .style-type__select-item(data-size="l") l
+            .style-type
+                .style-type__title Color
+                .style-type__select-box.style-type_color
+                    .style-type__select-item.active(data-color='default') default
+                    .style-type__select-item(data-color='success') success
+                    .style-type__select-item(data-color='warning') warning
+                    .style-type__select-item(data-color='error') error
+                    .style-type__select-item(data-color='danger') danger
+            .style-type
+                .style-type__title Event states
+                .style-type__select-box.style-type_event
+                    .style-type__select-item(data-event="disabled") disabled
+                    .style-type__select-item(data-event="loading") loading
+            .style-type
+                .style-type__title Kinds
+                .style-type__select-box.style-type_anchor
+                    .style-type__select-item(data-anchor="anchor") anchor
+
+
+

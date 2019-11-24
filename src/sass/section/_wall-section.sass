@@ -1,0 +1,22 @@
+.wall-section
+  position: relative
+  width: 100%
+  height: calc(100vh - #{$header-height})
+  overflow-x: auto
+  background-color: #edf0f3
+  padding-top: 15px
+  padding-bottom: 15px
+  @media #{$xs-min}
+    overflow-y: hidden
+  &__container
+    width: auto
+    min-width: 100%
+    max-width: none
+    display: inline-flex
+    flex-flow: column nowrap
+    height: calc(100vh - #{$header-height})
+    position: relative
+    @media #{$xs-min}
+      flex-flow: column wrap
+      min-width: auto
+
